@@ -463,3 +463,9 @@ footer > section {
   background-color: #9ac051;
   cursor: pointer;
 }
+
+/*Additional paragraph*/
+
+.additional-paragraph {
+  display: none;
+}
