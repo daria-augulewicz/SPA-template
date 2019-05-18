@@ -270,7 +270,8 @@ nav li {
 }
 
 .slider-stage {
-/*  width: 500px;*/
+  width: 500px;
+  overflow-x: hidden;
 }
 
 .slider {
@@ -278,7 +279,7 @@ nav li {
   width: 500px;
   padding: 0;
   display: flex;
-  overflow-x: hidden;
+  position: relative;
 }
 
 /*Go up*/
@@ -467,5 +468,10 @@ footer > section {
 /*Additional paragraph*/
 
 .additional-paragraph {
+  display: none;
+}
+
+.form-info {
+  text-align: center;
   display: none;
 }
