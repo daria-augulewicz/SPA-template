@@ -60,12 +60,46 @@ document.addEventListener("DOMContentLoaded", function() {
   let slidesNumber = slides.length - 1;
   
   function goToSlide(index) {
+    
+    if (index < 0) {
+      index = slidesNumber;
+    } else if (index > slidesNumber) {
+      index = 0;
+    }
+    
     slider.style.left = index * (-slideWidth) + "px";
     currentIndex = index;
   }
   
-  goToSlide();
+  function slideToNext() {
+    goToSlide(currentIndex + 1);
+  }
   
+  function slideToPrev() {
+    goToSlide(currentIndex - 1);
+  }
   
+  prev.addEventListener("click", slideToPrev);
+  next.addEventListener("click", slideToNext);
+  setInterval(slideToNext, 4000);
+  
+  //  go-up button
+  
+  const goUpBtn = document.querySelector(".go-up i");
+
+  
+  goUpBtn.addEventListener("click", function() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  })
+  
+
+
+
+
+
   
 });
