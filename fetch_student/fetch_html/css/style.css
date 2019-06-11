@@ -1,0 +1,35 @@
+#nav a {
+		text-decoration:none;
+		display:block;
+		height:1.9em;
+		font-weight:900;
+		font-size:1em;
+		line-height:1.9em;
+		padding:0.7em 1.4em;
+		color:rgb(180,180,180);
+		background:rgb(80,80,80);
+	}
+	
+	#nav a:hover{
+		color:rgb(0,0,0);
+		background:rgb(255,191,0);
+	}
+	
+	#nav ul{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		width:20rem;
+	}
+
+table{
+	
+	width:40rem;
+	border-collapse:collapse;
+}
+
+th,td{
+	text-align:center;
+	height:3rem;
+	border:solid 1px black;
+}
