@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function() {
     this.style.display = "none";
   });
 
+
+
+  
   //  read more-less
   const readMoreLessBtns = document.querySelectorAll(".read-more-less-btn");
 
